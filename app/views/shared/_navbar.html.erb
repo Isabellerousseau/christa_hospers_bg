@@ -13,15 +13,14 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Corona</a>
       </li>
       <li class="nav-item dropdown">
-        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Klanten</a>
-          <a class="dropdown-item" href="#">Over mij</a>
-          <a class="dropdown-item" href="#">wat wil je nog meer?</a>
-          <a class="dropdown-item" href="#">HALLO!</a>
+          <a class="dropdown-item" href="#"><%= link_to "Over mij", about_path, class: "nav-link" %></a>
+          <a class="dropdown-item" href="#"><%= link_to "Klanten", klanten_path, class: "nav-link" %></a>
+          <a class="dropdown-item" href="#"><%= link_to "Contact", contact_path, class: "nav-link" %></a>
+          <a class="dropdown-item" href="#"><%= link_to "Corona", corona_path, class: "nav-link" %></a>
         </div>
       </li>
     </ul>
